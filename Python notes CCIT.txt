@@ -1,0 +1,61 @@
+OOP - OBJECT ORIENTED PROGRAMMING
+
+The main features of OOP are :-
+1. Data Abstraction and Encapsulation 
+2. Inheritance 
+3. Polymorphism 
+
+There are only two components in any two objects :-
+1. Data
+2. Function 
+
+CLASS : A class is user-defined data type where we can group data and its related functions together.
+
+SYNTAX : 
+class classnm:
+	Data members
+	--------------------------
+	Member functions 
+	---------------------------
+
+DATA MEMBERS : 
+It indicates information about the object or current state of object.
+SYNTAX : 
+	Objectname.membername = value
+
+NOTE : 
+1. DATA MEMBERS must be created in a setter method or constructors.
+2. DATA MEMBERS are automatically created when value is assigned to them in member functions.
+
+
+MEMBER FUNCTIONS :
+It indicates the operations that we perform on the object.
+SYNTAX : 
+def funName(self,arg1,arg2,..........):
+	statements
+	-------------------------
+	return value
+
+NOTE : 
+The self parameter is a reference to the object itself, and is used to access members that belongs to the object.
+
+SETTER METHOD : 
+1. Generalized setter methods are used to intialize objects.
+2. In python, they are also used to create members.
+3. Generally, their name starts with word "set". 
+
+SYNTAX : 
+def setPropertyName(self,arg1,............):
+	self.dataMember = arg1
+	self.dataMember = arg2
+	-------------------------------------------------------
+
+For ex : 
+Suppose a rectangle class has data members length and breadth: 
+For ex : a.setDimension(4,5)
+
+def setDimension(self,l,b):
+	self.length = l
+	self.breadth = b
+
+__________________________________________________________________________________________________________________________________________________
